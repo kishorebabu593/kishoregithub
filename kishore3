@@ -1,1 +1,20 @@
-kckckjnvijvijvij
+GIT is a version control tool
+it is used to store the codes 
+repositry is a collection of files or folders
+it has two types:
+
+1. Centralized version control
+2. Distributed centralized version control
+
+centralized version control:
+
+it is the old model version control
+it is a failure because of its single remote repositry model
+it takes so much time to download and upload the programming codes
+
+
+Distributed centralized version control:
+
+It is a current working model in market
+unlike CVC it has local repositry on each systems and it has remote version contontrol(GitHub).
+it takes a fraction of second to download and upload files or folders.
