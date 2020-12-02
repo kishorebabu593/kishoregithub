@@ -1,0 +1,33 @@
+GITHUB
+
+yum install git -- to install git in linux
+git --version --> to know the current version of git
+git config --global user.name "Kishore" - to config name
+git config --global user.email "kishorebabu593@gmail.com - to config email ID
+git config --global user.editor vim - to config the editor that used to edit
+git config --global user.compression 2 
+git config --global diff.tool vim.diff - to declare the diff
+first make directory that directory is the local repositry
+mkdir kishoregit
+git init - in that directory execute to initiate that directory as a local host
+vi filename - create a file vi mode and enter some words
+vi filename1 -   "
+vi filename2 -   "
+vi filename3 -   "
+vi filename4 -   "
+git diff filename - to add a single file in staging area
+git add . - to add all files in staging area
+git status - to know the status of added files
+git status -s -to view the status of added files in single file
+git commit -m "first commit" - to commit the files from staging area to local repositry
+git log - to know detailed commit details
+git log --oneline - to know all details of committed files
+git show commitid - to know who committed the files
+git diff - to know the diff of the old value and new value
+git diff --staged -to know the diff of the old value and new value of the all cahanges
+git blame filename - to know all add/commit details of the changes
+git remote add origin https://github.com/kishorebabu593/kishoregithub.git - to create a connection between local and remote repositry
+git push origin master - to push the edited files from local to remote repositry
+
+
+Thats all for the first day class!!!!
