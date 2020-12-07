@@ -31,3 +31,72 @@ git push origin master - to push the edited files from local to remote repositry
 
 
 Thats all for the first day class!!!!
+
+
+Second class of GIT in devops:
+
+sudo su root
+sudo yum install git
+git config --global user.name "Kishore"
+git config --global user.email "kishorebabu593@gmail.com"
+git config --global core.editor vim
+git config --global core.compression 2
+git config --global diff.tool vim.diff
+mkdir kishore
+cd kishore
+mkdir mygit1
+cd mygit1
+git init
+Initialized empty Git repository in /home/ec2-user/kishore/mygit1/.git/
+[root@ip-172-31-47-189 mygit1]# ls -ltra
+total 0
+drwxr-xr-x 3 root root  20 Dec  7 19:38 ..
+drwxr-xr-x 7 root root 119 Dec  7 19:38 .git
+drwxr-xr-x 3 root root  18 Dec  7 19:38 .
+vi file1
+vi file2
+vi file3
+vi file4
+git add .
+git status -s
+A  file1
+A  file2
+A  file3
+A  file4
+ git commit -m "First Commit"
+[master (root-commit) 4762642] First Commit
+ 4 files changed, 4 insertions(+)
+ create mode 100644 file1
+ create mode 100644 file2
+ create mode 100644 file3
+ create mode 100644 file4
+[root@ip-172-31-47-189 mygit1]# git log --oneline
+4762642 (HEAD -> master) First Commit
+vi file1
+vi file2
+ git diff --staged
+diff --git a/file1 b/file1
+index 0425fb0..9a3d0d5 100644
+--- a/file1
++++ b/file1
+@@ -1 +1,2 @@
+-1st of the first file
++1st line of the first file
++2nd line of the first file
+diff --git a/file2 b/file2
+index 528cffa..75424fc 100644
+--- a/file2
++++ b/file2
+@@ -1 +1,3 @@
+ 1st line of the second file
++2nd line of the second file
++
+git blame file1
+217047a0 (Kishore 2020-12-07 19:47:02 +0000 1) 1st line of the first file
+217047a0 (Kishore 2020-12-07 19:47:02 +0000 2) 2nd line of the first file
+
+
+ git show 4762642
+commit 47626422597167b70760d02f0cf32be7a3a1c14a
+Author: Kishore <kishorebabu593@gmail.com>
+Date:   M
